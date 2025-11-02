@@ -3,6 +3,7 @@
 This guide explains how to configure your Obsidian vault with a GitHub repository, allowing you to access and sync your notes across multiple devices.
 
 ---
+# Initializing Repository and creating Obsidian Vault
 
 ## 1. Setting Up the Environment
 
@@ -83,4 +84,26 @@ https://ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX@github.com/test/test-obsidian-v
   1. Open the Command Palette (CMD/Ctrl + P).
   2. Type Commit-and-sync and press Enter.
   3. All edited files will be automatically pushed to your GitHub repository.
- 
+
+# 4. Cloning a Repository on Other Devices
+
+To access your existing vault on a different device:
+
+1. Create a new vault in Obsidian.  
+2. Install the Git plugin as described above.  
+3. Open the Command Palette (CMD/Ctrl + P).  
+4. Type `Clone an existing remote repo` and press Enter.  
+5. Enter your repository URL in the format:  
+   `https://<PERSONAL_ACCESS_TOKEN>@github.com/<USERNAME>/<REPO_TO_CLONE>.git`  
+6. Type the main branch name (usually `main`) and press Enter twice.  
+7. Your repository will be cloned into the new vault.  
+8. You can now make changes, commit, and sync as usual.
+
+### Optional Settings
+
+- Go to **Settings → Git** to enable **Pull on Startup**.  
+- You can also configure **Auto Commit-and-Sync Interval (minutes)** to automate syncing changes.
+
+---
+
+With this setup, your Obsidian vault will be fully integrated with GitHub, allowing seamless access and synchronization across all your devices.
